@@ -1,18 +1,23 @@
-import { FaGithub, FaLinkedin, FaDownload } from 'react-icons/fa'
-import { FaSun, FaMoon } from 'react-icons/fa6'
+import { FaGithub, FaLinkedin, FaDownload } from 'react-icons/fa';
+import { FaSun, FaMoon } from 'react-icons/fa6';
+import TypingText from './TypingText';
 
 export default function Topbar({ darkMode, setDarkMode }) {
+  // Toggle dark mode globally
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+    document.body.classList.toggle('dark', !darkMode);  // Add or remove 'dark' class from body
+  };
+
   return (
     <div className="relative flex flex-col items-center justify-center mt-6 mb-4 transition-colors duration-700 ease-in-out">
       {/* Dark Mode Toggle Button */}
       <button
-        onClick={() => setDarkMode(!darkMode)}
+        onClick={toggleDarkMode}
         className="absolute top-4 right-4 w-14 h-7 bg-gray-300 dark:bg-gray-700 rounded-full p-1 flex items-center transition-all duration-500 ease-in-out"
       >
         <div
-          className={`bg-white w-5 h-5 rounded-full shadow-md transform transition-transform duration-500 ease-in-out ${
-            darkMode ? 'translate-x-7' : 'translate-x-0'
-          }`}
+          className={`bg-white w-5 h-5 rounded-full shadow-md transform transition-transform duration-500 ease-in-out ${darkMode ? 'translate-x-7' : 'translate-x-0'}`}
         >
           {darkMode ? (
             <FaMoon className="text-gray-800 w-full h-full p-1" />
@@ -37,6 +42,11 @@ export default function Topbar({ darkMode, setDarkMode }) {
       >
         Sankita
       </h1>
+      <TypingText
+        text="A Passionate Web Developer"
+        speed={100}
+        className={`text-glow ${darkMode ? 'dark-mode' : 'light-mode'}`}
+      />
 
       {/* Social Links */}
       <div
@@ -76,5 +86,5 @@ export default function Topbar({ darkMode, setDarkMode }) {
         Download Resume
       </a>
     </div>
-  )
+  );
 }
