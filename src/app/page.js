@@ -1,5 +1,5 @@
 'use client'
-
+import PageWrapper from '@/components/PageWrapper'
 import { useState, useEffect } from 'react'
 import Sidebar from '../components/Sidebar'
 import About from '../components/About'
@@ -66,8 +66,10 @@ export default function Home() {
     <div className={`flex h-screen ${darkMode ? 'bg-gray-900 text-white' : 'bg-gray-100 text-gray-900'}`}>
       <Sidebar activeTab={activeTab} setActiveTab={setActiveTab} />
       <main className={`flex-1 p-4 ${darkMode ? 'bg-gray-800 text-white' : 'bg-white text-gray-900'} rounded-lg m-4 overflow-auto shadow-lg transition-all duration-300`}>
-        {renderSection()}
-      </main>
+  <PageWrapper key={activeTab}>
+    {renderSection()}
+  </PageWrapper>
+</main>
     </div>
   )
 }
