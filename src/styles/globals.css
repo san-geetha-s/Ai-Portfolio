@@ -1,19 +1,10 @@
-/* Light mode green */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
 body {
-  --green-light: #33cc33; /* Lively green for light mode */
+  font-family: 'Fira Code', monospace;
+  background-color: #1e1e1e;
+  color: #d4d4d4;
 }
+/* Glowing Text */
 
 /* Dark mode green */
-body.dark {
-  --green-dark: #052405; /* Bright neon green for dark mode */
-}
-
-/* Apply it to your specific green text */
-.green-text {
-  color: var(--green-light);
-  transition: color 0.3s ease;
-}
-
-body.dark .green-text {
-  color: var(--green-dark);
-}

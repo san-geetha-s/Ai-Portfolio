@@ -2,12 +2,19 @@ import React, { useEffect, useState } from 'react';
 
 export default function About() {
   const [lines, setLines] = useState(['', '', '']);
+  const [darkMode, setDarkMode] = useState(true);
+
   const fullText = [
     "Hello, I’m Sankita 👩‍💻",
     "I’m a self-taught developer driven by passion",
     "I create secure and stylish digital experiences.",
     "Welcome to my VS Code-themed portfolio!"
   ];
+
+  useEffect(() => {
+    document.body.className = darkMode ? 'dark' : 'light';
+  }, [darkMode]);
+  
 
   useEffect(() => {
     let currentIndex = 0;
@@ -30,18 +37,27 @@ export default function About() {
         return;
       }
 
-      setTimeout(typeText, 100); // Adjust typing speed
+      setTimeout(typeText, 100);
     };
 
-    typeText(); // Start typing
-
+    typeText();
   }, []);
+
+  const toggleDarkMode = () => {
+    const newMode = !darkMode;
+    setDarkMode(newMode);
+    localStorage.setItem('theme', newMode ? 'dark' : 'light');
+  };
 
   return (
     <div className="about-container">
-      <p className="typed-text green-text">{lines[0]}</p>
-      <p className="typed-text green-text">{lines[1]}</p>
-      <p className="typed-text green-text">{lines[2]}</p>
+      <button onClick={toggleDarkMode} className="toggle-theme-btn">
+        {lines.map((line, index) => (
+          <p key={index} className="typed-text about-text">
+            {line}
+          </p>
+        ))}
+      </button>
     </div>
   );
 }

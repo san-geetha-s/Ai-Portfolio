@@ -68,7 +68,7 @@ body {
 }
 .about-container {
   font-family: 'Courier New', Courier, monospace;
-  color: #33ff00; /* Green text */
+  /* Green text */
   text-align: center; /* Center the text */
   padding: 20px;
 }
@@ -131,21 +131,20 @@ body {
   }
 }
 /* Light mode green */
-body {
-  --green-light: #073707; /* Lively green for light mode */
-}
-
-/* Dark mode green */
-body.dark {
-  --green-dark: #56e756; /* Bright neon green for dark mode */
-}
-
-/* Apply it to your specific green text */
-.green-text {
-  color: var(--green-light);
+/* Global CSS */
+/* Global styles for theme */
+.about-text {
   transition: color 0.3s ease;
 }
 
-body.dark .green-text {
-  color: var(--green-dark);
+/* Dark mode */
+body.dark .about-text {
+  color: #00C9A7; /* bright teal */
 }
+
+/* Light mode */
+body.light .about-text {
+  color: #0a6f0a; /* very dark green */
+
+}
+
