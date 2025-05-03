@@ -27,7 +27,7 @@ export default function MinimalTopbar({ darkMode, setDarkMode }) {
       </div>
 
       {/* Name in the Center */}
-      <h1 className="text-3xl font-semibold text-center">Sankita</h1>
+      <h1 className="text-3xl font-semibold text-center">Sangeetha</h1>
 
       {/* Dark Mode Toggle on the Right */}
       <button

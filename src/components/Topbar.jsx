@@ -40,7 +40,7 @@ export default function Topbar({ darkMode, setDarkMode }) {
           darkMode ? 'text-white' : 'text-gray-900'
         }`}
       >
-        Sankita
+        Sangeetha
       </h1>
       <TypingText
         text="A Passionate Web Developer"

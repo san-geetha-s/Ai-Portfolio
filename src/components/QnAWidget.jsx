@@ -1,7 +1,8 @@
 'use client'
+
 import { useState } from 'react'
 import { getHuggingFaceAnswer } from '../utils/hfQna'
-import qaData from '@/data/qaData'
+
 export default function QnAWidget() {
   const [question, setQuestion] = useState('')
   const [answer, setAnswer] = useState('')
@@ -18,24 +19,50 @@ export default function QnAWidget() {
   }
 
   return (
-    <div className="p-4 rounded-lg border mt-6">
-      <h2 className="text-lg font-bold mb-2">Ask me anything!</h2>
+    <div style={{ marginTop: '30px' }}>
+      <h2 style={{ color: 'white', fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>
+        Ask me anything!
+      </h2>
       <input
         type="text"
         placeholder="Who is Sankita?"
         value={question}
         onChange={(e) => setQuestion(e.target.value)}
-        className="w-full border p-2 mb-2"
+        style={{
+          width: '100%',
+          padding: '10px',
+          borderRadius: '6px',
+          border: '1px solid #ccc',
+          marginBottom: '10px',
+        }}
       />
       <button
         onClick={handleAsk}
-        className="bg-blue-600 text-white px-4 py-2 rounded"
+        style={{
+          width: '100%',
+          backgroundColor: '#00ffaa',
+          color: '#000',
+          padding: '10px',
+          borderRadius: '6px',
+          fontWeight: 'bold',
+          border: 'none',
+          cursor: 'pointer',
+        }}
       >
         {loading ? 'Thinking...' : 'Ask'}
       </button>
 
       {answer && (
-        <div className="mt-4 p-3 bg-gray-200 rounded text-gray-800">
+        <div
+          style={{
+            marginTop: '15px',
+            padding: '10px',
+            backgroundColor: 'rgba(255, 255, 255, 0.1)',
+            border: '1px solid rgba(255, 255, 255, 0.2)',
+            borderRadius: '8px',
+            color: '#fff',
+          }}
+        >
           <strong>Answer:</strong> {answer}
         </div>
       )}
