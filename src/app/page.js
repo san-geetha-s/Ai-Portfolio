@@ -8,7 +8,9 @@ import Skills from '../components/Skills'
 import Contact from '../components/Contact'
 import Topbar from '../components/Topbar'
 import MinimalTop from '../components/MinimalTopbar'
-
+import QnAWidget from '../components/QnAWidget'
+import ChatWidget from '../components/ChatWidget'
+import qaData from '../data/qaData'
 export default function Home() {
   const [activeTab, setActiveTab] = useState('about')
   const [darkMode, setDarkMode] = useState(true)
@@ -68,6 +70,7 @@ export default function Home() {
       <main className={`flex-1 p-4 ${darkMode ? 'bg-gray-800 text-white' : 'bg-white text-gray-900'} rounded-lg m-4 overflow-auto shadow-lg transition-all duration-300`}>
   <PageWrapper key={activeTab}>
     {renderSection()}
+    <ChatWidget/>
   </PageWrapper>
 </main>
     </div>

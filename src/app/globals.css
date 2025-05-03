@@ -19,11 +19,52 @@
   }
 }
 
-body {
+/* General reset for margin, padding, and box-sizing */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden; /* Prevent scrollbar */
+  -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on touch devices */
+  scroll-behavior: smooth; /* Smooth scrolling on the entire page */
 }
+
+/* Prevent scrolling on the root element */
+#root {
+  height: 100%;
+  overflow: hidden; /* Prevent scrollbars on the root */
+}
+
+/* Prevent scrolling and scrollbar on the html element */
+html {
+  overflow: hidden; /* Prevent scrollbar on the html element */
+  -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on mobile */
+  touch-action: auto; /* Enables touch gestures */
+}
+
+/* Hide scrollbar but allow scrolling inside elements */
+body {
+  overflow: hidden; /* Prevent scrollbar but allows content to scroll */
+  padding-right: 0; /* Ensure there's no padding from the scrollbar */
+}
+
+/* Add scrollable content class for any areas that need scrolling */
+.scrollable-content {
+  overflow-y: scroll;
+  max-height: 100vh; /* Limit the height to viewport height */
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling for touch devices */
+}
+
+/* Customize scrollbar for mobile/tablet to be hidden */
+::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar completely */
+}
+
+/* Optional: Add transitions for glow effect, etc. */
 .text-glow {
   font-weight: bold;
   text-transform: uppercase;
@@ -33,27 +74,18 @@ body {
 }
 
 .text-glow:hover {
-  color: #e67e22; /* Warm amber color on hover */
+  color: #e67e22;
   text-shadow: 0 0 25px rgba(241, 196, 15, 0.8), 0 0 35px rgba(241, 196, 15, 0.6);
 }
 
-/* Light mode color */
 .light-mode .text-glow {
-  color: #2c3e50; /* Darker color for light mode */
+  color: #2c3e50;
 }
 
-/* Dark mode color */
 .dark-mode .text-glow {
-  color: #bdc3c7; /* Lighter color for dark mode */
+  color: #bdc3c7;
 }
 
-
-
-
-
-
-
-/* Blinking Cursor */
 .blinking-cursor {
   animation: blink 1s infinite;
 }
@@ -66,85 +98,72 @@ body {
     opacity: 0;
   }
 }
+
 .about-container {
   font-family: 'Courier New', Courier, monospace;
-  /* Green text */
-  text-align: center; /* Center the text */
+  text-align: center;
   padding: 20px;
 }
 
 .typed-text {
   display: block;
   position: relative;
-  font-size: 1.2rem; /* Reduced font size */
+  font-size: 1.2rem;
   white-space: nowrap;
   width: 100%;
   margin-bottom: 10px;
-   /* Space between lines */
 }
 
 .typed-text::after {
-  content: '|'; /* Cursor symbol */
+  content: '|';
   position: absolute;
   animation: blink 0.7s step-end infinite;
-  font-size: 1.2rem; /* Adjust cursor size to match text size */
+  font-size: 1.2rem;
 }
 
-@keyframes blink {
-  50% {
-    opacity: 0;
-  }
-}
-
-/* Media queries for responsive design */
+/* Responsive Design */
 @media (max-width: 1200px) {
   .typed-text {
-    font-size: 1.1rem; /* Slightly smaller font size on medium screens */
+    font-size: 1.1rem;
   }
 
   .typed-text::after {
-    font-size: 1.0rem; /* Match cursor size */
+    font-size: 1.0rem;
   }
 }
 
 @media (max-width: 768px) {
   .typed-text {
-    font-size: 1rem; /* Smaller font size on tablets */
+    font-size: 1rem;
   }
 
   .typed-text::after {
-    font-size: 1rem; /* Match cursor size */
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 480px) {
   .typed-text {
-    font-size: 0.9rem; /* Even smaller font size on mobile screens */
+    font-size: 0.9rem;
   }
 
   .typed-text::after {
-    font-size: 0.9rem; /* Match cursor size */
+    font-size: 0.9rem;
   }
 
   .about-container {
-    padding: 10px; /* Less padding on small screens */
+    padding: 10px;
   }
 }
-/* Light mode green */
-/* Global CSS */
-/* Global styles for theme */
+
 .about-text {
   transition: color 0.3s ease;
 }
 
-/* Dark mode */
 body.dark .about-text {
-  color: #00C9A7; /* bright teal */
+  color: #00C9A7;
 }
 
-/* Light mode */
 body.light .about-text {
-  color: #0a6f0a; /* very dark green */
-
+  color: #0a6f0a;
 }
-

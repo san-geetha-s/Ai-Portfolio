@@ -5,7 +5,7 @@ export default function About() {
   const [darkMode, setDarkMode] = useState(true);
 
   const fullText = [
-    "Hello, I’m Sankita 👩‍💻",
+    "Hello, I’m Sangeetha 👩‍💻",
     "I’m a self-taught developer driven by passion",
     "I create secure and stylish digital experiences.",
     "Welcome to my VS Code-themed portfolio!"
