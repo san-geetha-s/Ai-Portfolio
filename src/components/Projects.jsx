@@ -2,9 +2,16 @@ const projects = [
   {
     title: "Netflix Clone",
     tech: "React, Firebase, TMDB API",
-    description: "A Netflix look-alike with user authentication, movie categories, and a responsive UI.",
+    description: "A Netflix look-alike with , movie categories, and a responsive UI.",
     live: "https://your-netflix-clone-link.vercel.app",
     github: "https://github.com/yourusername/netflix-clone",
+  },
+  {
+    title: "Text to speech app",
+    tech: "Nextjs,Vercel, Tailwindcss,SpeechSynthesis API",
+    description: "A simple and modern web application that converts written text into spoken words using the browser's built-in Web Speech API. Built with Next.js, TypeScript, and Tailwind CSS, the app allows users to enter any text, adjust voice, pitch, and rate, and listen to it out loud. It also supports light/dark themes with a clean, responsive UI.",
+    live: "https://my-ai-app-git-master-sangeethas-projects-44be69ed.vercel.app/",
+    github: "https://github.com/san-geetha-s/my-ai-app?tab=readme-ov-file",
   },
   {
     title: "Job Application Tracker",
@@ -20,6 +27,7 @@ const projects = [
     live: "https://your-cyberquiz-link.vercel.app",
     github: "https://github.com/yourusername/cybersecurity-quiz",
   },
+
 ];
 
 export default function Projects() {
