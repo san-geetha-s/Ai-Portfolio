@@ -55,7 +55,7 @@ export default function Topbar({ darkMode, setDarkMode }) {
         }`}
       >
         <a
-          href="https://github.com/yourusername"
+          href="https://github.com/san-geetha-s"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-gray-400"
@@ -63,7 +63,7 @@ export default function Topbar({ darkMode, setDarkMode }) {
           <FaGithub />
         </a>
         <a
-          href="https://linkedin.com/in/yourusername"
+          href="https://www.linkedin.com/in/sangeetha-s-43aa96221/"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-blue-400"
@@ -74,7 +74,7 @@ export default function Topbar({ darkMode, setDarkMode }) {
 
       {/* Resume Download Button */}
       <a
-        href="/Sankita_Resume.pdf"
+        href="/SANGEETHA_S_MERN_DEVELOPER.pdf"
         download
         className={`mt-4 px-4 py-2 flex items-center gap-2 transition-all duration-700 transform hover:scale-105 ${
           darkMode
