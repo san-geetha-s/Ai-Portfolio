@@ -74,7 +74,7 @@ export default function Topbar({ darkMode, setDarkMode }) {
 
       {/* Resume Download Button */}
       <a
-        href="/SANGEETHA_S_MERN_DEVELOPER.pdf"
+        href="/SANGEETHA_S_REACT_DEVELOPER.pdf"
         download
         className={`mt-4 px-4 py-2 flex items-center gap-2 transition-all duration-700 transform hover:scale-105 ${
           darkMode
