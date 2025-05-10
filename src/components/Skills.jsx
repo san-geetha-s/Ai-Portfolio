@@ -3,8 +3,7 @@
 export default function Skills() {
     const skills = [
       'HTML', 'CSS', 'JavaScript', 'React', 'Next.js',
-      'Tailwind CSS', 'Git', 'GitHub', 'MongoDB', 'Node.js',
-      'Express.js', 'REST APIs'
+      'Tailwind CSS', 'Git', 'GitHub', 'REST APIs'
     ];
   
     return (
