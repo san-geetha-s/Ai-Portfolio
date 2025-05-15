@@ -5,7 +5,7 @@ A sleek, developer-themed personal portfolio built using Next.js, styled to look
 
 🚀 Live Demo
 👉 View Live on Vercel
-(Replace with your actual deployed URL)
+(https://ai-portfolio-murex-mu.vercel.app/)
 
 🛠 Features
 🖥️ VS Code Inspired UI – Styled to look like a code editor interface.
