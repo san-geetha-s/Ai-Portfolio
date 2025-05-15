@@ -1,40 +1,75 @@
-<<<<<<< HEAD
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+🧠 AI-Powered Developer Portfolio
+A sleek, developer-themed personal portfolio built using Next.js, styled to look like a VS Code interface, and integrated with ChatGPT as a floating AI assistant to answer questions about you and your work.
 
-## Getting Started
+<!-- Replace with your screenshot path if available -->
 
-First, run the development server:
+🚀 Live Demo
+👉 View Live on Vercel
+(Replace with your actual deployed URL)
 
-```bash
+🛠 Features
+🖥️ VS Code Inspired UI – Styled to look like a code editor interface.
+
+🤖 AI Assistant – ChatGPT-powered assistant that interacts with visitors and answers questions.
+
+📄 Separate Pages – Projects, About Me, Resume, Contact – all structured as separate pages.
+
+✨ Page Transitions – Smooth animations on navigation using Framer Motion.
+
+🎨 Responsive Design – Fully mobile-friendly and responsive.
+
+📁 Project Structure
+bash
+Copy
+Edit
+src/
+├── components/       # Reusable React components like Topbar, AI Assistant
+├── pages/            # Each page like /about, /projects
+├── styles/           # Global and module CSS
+├── app/ or layouts/  # Page layout wrappers (if using app dir routing)
+public/               # Static assets
+🧑‍💻 Tech Stack
+Framework: Next.js
+
+UI: Custom CSS / Tailwind (if used)
+
+Animation: Framer Motion
+
+AI Assistant: OpenAI ChatGPT API (or dummy UI)
+
+📦 Getting Started
+1. Clone the Repo
+bash
+Copy
+Edit
+git clone https://github.com/yourusername/ai-portfolio.git
+cd ai-portfolio
+2. Install Dependencies
+bash
+Copy
+Edit
+npm install
+3. Run Locally
+bash
+Copy
+Edit
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+4. Deploy to Vercel
+Push your code to GitHub
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Go to vercel.com and import your repository
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Ensure that your Root Directory points to the folder with your package.json
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Vercel auto-detects Next.js and deploys it
 
-## Learn More
+📌 Customization Tips
+Update content in pages/ like about.js, projects.js, etc.
 
-To learn more about Next.js, take a look at the following resources:
+Modify styles in styles/ or through component-level CSS
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Configure the AI Assistant logic and responses in components/AIAssistant.jsx
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-=======
-# Ai-Portfolio
->>>>>>> main
+📄 License
+MIT License.
+Free to use and modify for personal or professional use.
