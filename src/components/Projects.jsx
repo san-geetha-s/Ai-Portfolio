@@ -3,8 +3,8 @@ const projects = [
     title: "AI based portfolio",
     tech: "Nextjs, Huggingface Inference API, formsubmit,Fetch API / Axios,Tailwind CSS ,",
     description: "A Netflix look-alike with , movie categories, and a responsive UI.",
-    live: "https://your-netflix-clone-link.vercel.app",
-    github: "https://github.com/yourusername/netflix-clone",
+    live: "https://ai-portfolio-murex-mu.vercel.app/",
+    github: "https://github.com/san-geetha-s/Ai-Portfolio",
   },
   {
     title: "Netflix Clone",
