@@ -1,5 +1,5 @@
 🧠 AI-Powered Developer Portfolio
-A sleek, developer-themed personal portfolio built using Next.js, styled to look like a VS Code interface, and integrated with ChatGPT as a floating AI assistant to answer questions about you and your work.
+A sleek, developer-themed personal portfolio built using Next.js, styled to look like a VS Code interface, a floating AI assistant to answer questions about you and your work.
 
 <!-- Replace with your screenshot path if available -->
 
