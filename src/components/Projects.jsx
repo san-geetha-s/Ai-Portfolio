@@ -31,8 +31,8 @@ const projects = [
     title: "Cybersecurity Awareness Quiz",
     tech: "React, Tailwind CSS",
     description: "An interactive quiz that educates users on basic cybersecurity practices.",
-    live: "https://your-cyberquiz-link.vercel.app",
-    github: "https://github.com/yourusername/cybersecurity-quiz",
+    live: "https://cyber-quiz-five.vercel.app/",
+    github: "https://github.com/san-geetha-s/Cyber-Quiz",
   },
 
 ];
