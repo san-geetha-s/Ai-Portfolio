@@ -10,7 +10,7 @@ A sleek, developer-themed personal portfolio built using Next.js, styled to look
 🛠 Features
 🖥️ VS Code Inspired UI – Styled to look like a code editor interface.
 
-🤖 AI Assistant – ChatGPT-powered assistant that interacts with visitors and answers questions.
+🤖 AI Assistant – Hugging face inference assistant that interacts with visitors and answers questions.
 
 📄 Separate Pages – Projects, About Me, Resume, Contact – all structured as separate pages.
 
@@ -35,7 +35,7 @@ UI: Custom CSS / Tailwind (if used)
 
 Animation: Framer Motion
 
-AI Assistant: OpenAI ChatGPT API (or dummy UI)
+AI Assistant: Hugging face inference API
 
 📦 Getting Started
 1. Clone the Repo
