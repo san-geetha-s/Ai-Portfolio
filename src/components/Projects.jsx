@@ -10,7 +10,7 @@ const projects = [
     title: "Netflix Clone",
     tech: "React, Firebase, TMDB API",
     description: "A Netflix look-alike with , movie categories, and a responsive UI.",
-    live: "https://your-netflix-clone-link.vercel.app",
+    live: "https://clone-app-7c5cc.web.app/",
     github: "https://github.com/san-geetha-s/Netflix-clone",
   },
   {
