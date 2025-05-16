@@ -2,7 +2,7 @@ const projects = [
   {
     title: "AI based portfolio",
     tech: "Nextjs, Huggingface Inference API, formsubmit,Fetch API / Axios,Tailwind CSS ,",
-    description: "A Netflix look-alike with , movie categories, and a responsive UI.",
+    description: "AI-Powered Developer Portfolio A sleek, developer-themed personal portfolio built using Next.js, styled to look like a VS Code interface, a floating AI assistant to answer questions about you and your work..",
     live: "https://ai-portfolio-murex-mu.vercel.app/",
     github: "https://github.com/san-geetha-s/Ai-Portfolio",
   },
